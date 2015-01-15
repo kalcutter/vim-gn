@@ -155,8 +155,8 @@ if version >= 508 || !exists("did_gn_syn_inits")
 
   HiLink gnConditional Conditional
 
-  HiLink gnTargetDecl Statement
-  HiLink gnFunction Statement
+  HiLink gnTargetDecl Type
+  HiLink gnFunction Macro
   HiLink gnVariable Statement
 
   HiLink gnTodo Todo
