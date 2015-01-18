@@ -43,6 +43,7 @@ syn match gnInteger /-\?\<\d\+\>/
 syn region gnString start=/"/ skip=/\\"/ end=/"/ oneline contains=gnEscape,gnVarSubst
 syn match gnEscape +\\["$\\]+ contained
 syn match gnVarSubst "\$\h\w*" contained
+syn match gnVarSubst "\${\h\w*}" contained
 
 " syn region gnVarSubst start="\${" end="}" contained
 " syn region gnScope start="{" end="}" fold transparent
