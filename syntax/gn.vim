@@ -86,17 +86,19 @@ syn keyword gnFunction toolchain_args
 syn keyword gnFunction write_file
 
 " Built-in predefined variables
-syn keyword gnVariable build_cpu_arch
-syn keyword gnVariable build_os
-syn keyword gnVariable cpu_arch
+syn keyword gnVariable current_cpu
+syn keyword gnVariable current_os
 syn keyword gnVariable current_toolchain
 syn keyword gnVariable default_toolchain
-syn keyword gnVariable os
+syn keyword gnVariable host_cpu
+syn keyword gnVariable host_os
 syn keyword gnVariable python_path
 syn keyword gnVariable root_build_dir
 syn keyword gnVariable root_gen_dir
 syn keyword gnVariable root_out_dir
+syn keyword gnVariable target_cpu
 syn keyword gnVariable target_gen_dir
+syn keyword gnVariable target_os
 syn keyword gnVariable target_out_dir
 
 " Variables you set in targets
