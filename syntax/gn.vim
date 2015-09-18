@@ -59,6 +59,7 @@ syn keyword gnTargetDecl group
 syn keyword gnTargetDecl shared_library
 syn keyword gnTargetDecl source_set
 syn keyword gnTargetDecl static_library
+syn keyword gnTargetDecl target
 
 " Buildfile functions
 syn keyword gnFunction assert
@@ -67,6 +68,7 @@ syn keyword gnFunction declare_args
 syn keyword gnFunction defined
 syn keyword gnFunction exec_script
 syn keyword gnFunction foreach
+syn keyword gnFunction forward_variables_from
 syn keyword gnFunction get_label_info
 syn keyword gnFunction get_path_info
 syn keyword gnFunction get_target_outputs
@@ -127,6 +129,8 @@ syn keyword gnVariable libs
 syn keyword gnVariable output_extension
 syn keyword gnVariable output_name
 syn keyword gnVariable outputs
+syn keyword gnVariable precompiled_header
+syn keyword gnVariable precompiled_source
 syn keyword gnVariable public
 syn keyword gnVariable public_configs
 syn keyword gnVariable public_deps
