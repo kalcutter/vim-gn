@@ -115,6 +115,7 @@ syn keyword gnVariable cflags_objcc
 syn keyword gnVariable check_includes
 syn keyword gnVariable complete_static_lib
 syn keyword gnVariable configs
+syn keyword gnVariable console
 syn keyword gnVariable data
 syn keyword gnVariable data_deps
 syn keyword gnVariable defines
