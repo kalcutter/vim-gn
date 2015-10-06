@@ -107,6 +107,7 @@ syn keyword gnVariable target_out_dir
 syn keyword gnVariable all_dependent_configs
 syn keyword gnVariable allow_circular_includes_from
 syn keyword gnVariable args
+syn keyword gnVariable asmflags
 syn keyword gnVariable cflags
 syn keyword gnVariable cflags_c
 syn keyword gnVariable cflags_cc
