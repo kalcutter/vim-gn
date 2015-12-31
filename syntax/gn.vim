@@ -1,7 +1,7 @@
 " This is the Vim syntax file for GN files.
 " Language: GN
 " Maintainer: Kal Conley
-" Latest Revision: 14 January 2015
+" Latest Revision: 31 December 2015
 "
 " This is free and unencumbered software released into the public domain.
 "
@@ -56,6 +56,7 @@ syn keyword gnTargetDecl action_foreach
 syn keyword gnTargetDecl copy
 syn keyword gnTargetDecl executable
 syn keyword gnTargetDecl group
+syn keyword gnTargetDecl loadable_module
 syn keyword gnTargetDecl shared_library
 syn keyword gnTargetDecl source_set
 syn keyword gnTargetDecl static_library
@@ -122,7 +123,6 @@ syn keyword gnVariable data_deps
 syn keyword gnVariable defines
 syn keyword gnVariable depfile
 syn keyword gnVariable deps
-syn keyword gnVariable forward_dependent_configs_from
 syn keyword gnVariable include_dirs
 syn keyword gnVariable inputs
 syn keyword gnVariable ldflags
@@ -136,6 +136,7 @@ syn keyword gnVariable precompiled_source
 syn keyword gnVariable public
 syn keyword gnVariable public_configs
 syn keyword gnVariable public_deps
+syn keyword gnVariable response_file_contents
 syn keyword gnVariable script
 syn keyword gnVariable sources
 syn keyword gnVariable testonly
