@@ -40,7 +40,7 @@ syn match gnComment "#.*$" contains=gnTodo,@Spell
 
 syn keyword gnBoolean false true
 syn match gnInteger /-\?\<\d\+\>/
-syn region gnString start=/"/ skip=/\\"/ end=/"/ oneline contains=gnEscape,gnVarSubst
+syn region gnString start=/"/ skip=/\\\\\|\\"/ end=/"/ oneline contains=gnEscape,gnVarSubst
 syn match gnEscape +\\["$\\]+ contained
 syn match gnEscape "\$0x\x\x" contained
 syn match gnVarSubst "\$\h\w*" contained
