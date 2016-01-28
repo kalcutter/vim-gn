@@ -1,7 +1,7 @@
 " This is the Vim syntax file for GN files.
 " Language: GN
 " Maintainer: Kal Conley
-" Latest Revision: 31 December 2015
+" Latest Revision: 28 January 2016
 "
 " This is free and unencumbered software released into the public domain.
 "
@@ -109,6 +109,7 @@ syn keyword gnVariable all_dependent_configs
 syn keyword gnVariable allow_circular_includes_from
 syn keyword gnVariable args
 syn keyword gnVariable asmflags
+syn keyword gnVariable assert_no_deps
 syn keyword gnVariable cflags
 syn keyword gnVariable cflags_c
 syn keyword gnVariable cflags_cc
