@@ -1,7 +1,7 @@
 " This is the Vim syntax file for GN files.
 " Language: GN
 " Maintainer: Kal Conley
-" Latest Revision: 28 January 2016
+" Latest Revision: 20 April 2016
 "
 " This is free and unencumbered software released into the public domain.
 "
@@ -46,15 +46,14 @@ syn match gnEscape "\$0x\x\x" contained
 syn match gnVarSubst "\$\h\w*" contained
 syn match gnVarSubst "\${\h\w*}" contained
 
-" syn region gnVarSubst start="\${" end="}" contained
-" syn region gnScope start="{" end="}" fold transparent
-
 syn keyword gnConditional if else
 
 " Target declarations
 syn keyword gnTargetDecl action
 syn keyword gnTargetDecl action_foreach
+syn keyword gnTargetDecl bundle_data
 syn keyword gnTargetDecl copy
+syn keyword gnTargetDecl create_bundle
 syn keyword gnTargetDecl executable
 syn keyword gnTargetDecl group
 syn keyword gnTargetDecl loadable_module
@@ -108,9 +107,14 @@ syn keyword gnVariable target_out_dir
 " Variables you set in targets
 syn keyword gnVariable all_dependent_configs
 syn keyword gnVariable allow_circular_includes_from
+syn keyword gnVariable arflags
 syn keyword gnVariable args
 syn keyword gnVariable asmflags
 syn keyword gnVariable assert_no_deps
+syn keyword gnVariable bundle_executable_dir
+syn keyword gnVariable bundle_plugins_dir
+syn keyword gnVariable bundle_resources_dir
+syn keyword gnVariable bundle_root_dir
 syn keyword gnVariable cflags
 syn keyword gnVariable cflags_c
 syn keyword gnVariable cflags_cc
@@ -130,8 +134,10 @@ syn keyword gnVariable inputs
 syn keyword gnVariable ldflags
 syn keyword gnVariable lib_dirs
 syn keyword gnVariable libs
+syn keyword gnVariable output_dir
 syn keyword gnVariable output_extension
 syn keyword gnVariable output_name
+syn keyword gnVariable output_prefix_override
 syn keyword gnVariable outputs
 syn keyword gnVariable precompiled_header
 syn keyword gnVariable precompiled_source
@@ -143,6 +149,7 @@ syn keyword gnVariable script
 syn keyword gnVariable sources
 syn keyword gnVariable testonly
 syn keyword gnVariable visibility
+syn keyword gnVariable write_runtime_deps
 
 syn keyword gnTodo FIXME NOTE NOTES TODO XXX contained
 
