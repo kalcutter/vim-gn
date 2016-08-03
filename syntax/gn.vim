@@ -2,7 +2,7 @@
 " Language:     GN (Generate Ninja)
 " Maintainer:   Kal Conley
 " URL:          https://github.com/c0nk/vim-gn
-" Last Change:  24 April 2016
+" Last Change:  03 August 2016
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -51,6 +51,7 @@ syn keyword gnFunction get_path_info
 syn keyword gnFunction get_target_outputs
 syn keyword gnFunction getenv
 syn keyword gnFunction import
+syn keyword gnFunction pool
 syn keyword gnFunction print
 syn keyword gnFunction process_file_template
 syn keyword gnFunction read_file
@@ -58,6 +59,7 @@ syn keyword gnFunction rebase_path
 syn keyword gnFunction set_default_toolchain
 syn keyword gnFunction set_defaults
 syn keyword gnFunction set_sources_assignment_filter
+syn keyword gnFunction split_list
 syn keyword gnFunction template
 syn keyword gnFunction tool
 syn keyword gnFunction toolchain
@@ -71,12 +73,14 @@ syn keyword gnVariable current_toolchain
 syn keyword gnVariable default_toolchain
 syn keyword gnVariable host_cpu
 syn keyword gnVariable host_os
+syn keyword gnVariable invoker
 syn keyword gnVariable python_path
 syn keyword gnVariable root_build_dir
 syn keyword gnVariable root_gen_dir
 syn keyword gnVariable root_out_dir
 syn keyword gnVariable target_cpu
 syn keyword gnVariable target_gen_dir
+syn keyword gnVariable target_name
 syn keyword gnVariable target_os
 syn keyword gnVariable target_out_dir
 
@@ -97,6 +101,10 @@ syn keyword gnVariable cflags_cc
 syn keyword gnVariable cflags_objc
 syn keyword gnVariable cflags_objcc
 syn keyword gnVariable check_includes
+syn keyword gnVariable code_signing_args
+syn keyword gnVariable code_signing_outputs
+syn keyword gnVariable code_signing_script
+syn keyword gnVariable code_signing_sources
 syn keyword gnVariable complete_static_lib
 syn keyword gnVariable configs
 syn keyword gnVariable console
@@ -117,6 +125,7 @@ syn keyword gnVariable output_prefix_override
 syn keyword gnVariable outputs
 syn keyword gnVariable precompiled_header
 syn keyword gnVariable precompiled_source
+syn keyword gnVariable product_type
 syn keyword gnVariable public
 syn keyword gnVariable public_configs
 syn keyword gnVariable public_deps
