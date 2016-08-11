@@ -2,7 +2,7 @@
 " Language:     GN (Generate Ninja)
 " Maintainer:   Kal Conley
 " URL:          https://github.com/c0nk/vim-gn
-" Last Change:  03 August 2016
+" Last Change:  12 August 2016
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -20,7 +20,7 @@ syn region gnString start=/"/ skip=/\\\\\|\\"/ end=/"/ oneline contains=gnEscape
 syn match gnEscape +\\["$\\]+ contained
 syn match gnEscape "\$0x\x\x" contained
 syn match gnVarSubst "\$\h\w*" contained
-syn match gnVarSubst "\${\h\w*}" contained
+syn match gnVarSubst "\${\h\w*\(\.\h\w*\)*}" contained
 
 syn keyword gnConditional if else
 
