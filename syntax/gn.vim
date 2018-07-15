@@ -51,6 +51,7 @@ syn keyword gnFunction get_path_info
 syn keyword gnFunction get_target_outputs
 syn keyword gnFunction getenv
 syn keyword gnFunction import
+syn keyword gnFunction not_needed
 syn keyword gnFunction pool
 syn keyword gnFunction print
 syn keyword gnFunction process_file_template
@@ -63,7 +64,6 @@ syn keyword gnFunction split_list
 syn keyword gnFunction template
 syn keyword gnFunction tool
 syn keyword gnFunction toolchain
-syn keyword gnFunction toolchain_args
 syn keyword gnFunction write_file
 
 " Built-in predefined variables
@@ -91,6 +91,8 @@ syn keyword gnVariable arflags
 syn keyword gnVariable args
 syn keyword gnVariable asmflags
 syn keyword gnVariable assert_no_deps
+syn keyword gnVariable bundle_contents_dir
+syn keyword gnVariable bundle_deps_filter
 syn keyword gnVariable bundle_executable_dir
 syn keyword gnVariable bundle_plugins_dir
 syn keyword gnVariable bundle_resources_dir
@@ -107,12 +109,12 @@ syn keyword gnVariable code_signing_script
 syn keyword gnVariable code_signing_sources
 syn keyword gnVariable complete_static_lib
 syn keyword gnVariable configs
-syn keyword gnVariable console
 syn keyword gnVariable data
 syn keyword gnVariable data_deps
 syn keyword gnVariable defines
 syn keyword gnVariable depfile
 syn keyword gnVariable deps
+syn keyword gnVariable friend
 syn keyword gnVariable include_dirs
 syn keyword gnVariable inputs
 syn keyword gnVariable ldflags
@@ -123,7 +125,10 @@ syn keyword gnVariable output_extension
 syn keyword gnVariable output_name
 syn keyword gnVariable output_prefix_override
 syn keyword gnVariable outputs
+syn keyword gnVariable partial_info_plist
+syn keyword gnVariable pool
 syn keyword gnVariable precompiled_header
+syn keyword gnVariable precompiled_header_type
 syn keyword gnVariable precompiled_source
 syn keyword gnVariable product_type
 syn keyword gnVariable public
@@ -135,6 +140,8 @@ syn keyword gnVariable sources
 syn keyword gnVariable testonly
 syn keyword gnVariable visibility
 syn keyword gnVariable write_runtime_deps
+syn keyword gnVariable xcode_extra_attributes
+syn keyword gnVariable test_application_name
 
 syn keyword gnTodo FIXME NOTE NOTES TODO XXX contained
 
