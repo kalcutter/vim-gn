@@ -61,6 +61,7 @@ syn keyword gnFunction set_default_toolchain
 syn keyword gnFunction set_defaults
 syn keyword gnFunction set_sources_assignment_filter
 syn keyword gnFunction split_list
+syn keyword gnFunction string_replace
 syn keyword gnFunction template
 syn keyword gnFunction tool
 syn keyword gnFunction toolchain
