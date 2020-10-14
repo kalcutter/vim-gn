@@ -1,8 +1,8 @@
 " Vim syntax file for GN files
 " Language:     GN (Generate Ninja)
 " Maintainer:   Kal Conley
-" URL:          https://github.com/c0nk/vim-gn
-" Last Change:  12 August 2016
+" URL:          https://github.com/kalcutter/vim-gn
+" Last Change:  14 October 2020
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
